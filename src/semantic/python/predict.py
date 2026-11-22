@@ -12,7 +12,7 @@ from deeplab import build_model, build_voc_model, predict
 
 # project folder, three levels up from src/semantic/python/
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
-MODEL_FILE = os.path.join(ROOT, 'models', 'camvid_deeplabv3_mobilenet.pt')
+MODEL_FILE = os.path.join(ROOT, 'src', 'semantic', 'models', 'camvid_deeplabv3_mobilenet.pt')
 WIDTH, HEIGHT = 480, 360   # size the model was trained on
 
 

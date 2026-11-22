@@ -8,7 +8,7 @@ from deeplab import build_model, load_split, predict, confusion, scores
 # project folder, three levels up from src/semantic/python/
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 TEST_DIR = os.path.join(ROOT, 'data', 'camvid', 'prepared', 'test')
-MODEL_DIR = os.path.join(ROOT, 'models')
+MODEL_DIR = os.path.join(ROOT, 'src', 'semantic', 'models')
 MODEL_FILE = os.path.join(MODEL_DIR, 'camvid_deeplabv3_mobilenet.pt')
 BATCH = 8
 

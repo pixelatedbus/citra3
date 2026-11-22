@@ -2,12 +2,12 @@
 function tabSemantic(tab, fig, projectRoot, saveDir)
 % tab: matlab.ui.container.Tab, tab to build in
 % fig: matlab.ui.Figure, the app window
-% projectRoot: char, project folder (holds .venv/, src/semantic/python/predict.py, models/, data/)
+% projectRoot: char, project folder (holds .venv/, data/ and src/semantic/ with python/ and models/)
 % saveDir: char, folder suggested when saving a screenshot
 testDir = fullfile(projectRoot, 'data', 'camvid', 'prepared', 'test', 'images');
 pythonExe = fullfile(projectRoot, '.venv', 'Scripts', 'python.exe');
 scriptPath = fullfile(projectRoot, 'src', 'semantic', 'python', 'predict.py');
-modelDir = fullfile(projectRoot, 'models');
+modelDir = fullfile(projectRoot, 'src', 'semantic', 'models');
 [names, colours] = camvidClasses();
 [vocNames, vocColours] = vocClasses();
 
@@ -155,7 +155,7 @@ showInput();
                 found{end + 1} = sprintf('%s %.0f%%', vocNames{k}, 100 * share); %#ok<AGROW>
             end
         end
-        showImage(beforeAxes, label2rgb(Lbefore, vocColours, 'k'), ...
+        showImage(beforeAxes, label2rgb(Lbefore, vocColours), ...
             {'before fine-tuning (VOC classes)', strjoin(found, ', ')});
 
         [~, name, ext] = fileparts(imageList.Value);

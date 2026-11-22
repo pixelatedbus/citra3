@@ -10,7 +10,7 @@ from deeplab import build_model, to_input, load_split, predict, confusion, score
 # project folder, three levels up from src/semantic/python/
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 DATA_DIR = os.path.join(ROOT, 'data', 'camvid', 'prepared')
-MODEL_DIR = os.path.join(ROOT, 'models')
+MODEL_DIR = os.path.join(ROOT, 'src', 'semantic', 'models')
 MODEL_FILE = os.path.join(MODEL_DIR, 'camvid_deeplabv3_mobilenet.pt')
 LOG_FILE = os.path.join(MODEL_DIR, 'train_log.csv')
 
