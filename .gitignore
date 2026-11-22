@@ -1,0 +1,13 @@
+# python environment and caches
+/.venv/
+__pycache__/
+*.pyc
+
+# datasets, program output and archives
+/data/
+/results/
+*.zip
+*.pdf
+
+# matlab autosave
+*.asv
