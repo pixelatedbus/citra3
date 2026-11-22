@@ -2,7 +2,7 @@
 function showImage(ax, img, titleText)
 % ax: matlab.ui.control.UIAxes
 % img: double or logical, m x n or m x n x 3, or [] to clear
-% titleText: char
+% titleText: char, or cell of char for a title over several lines
 if isempty(img)
     cla(ax);
 else

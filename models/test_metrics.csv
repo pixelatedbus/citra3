@@ -1,0 +1,14 @@
+class,accuracy,iou
+Sky,0.9152,0.8826
+Building,0.7981,0.7757
+Pole,0.7121,0.1817
+Road,0.9750,0.9391
+Pavement,0.8561,0.7175
+Tree,0.8551,0.7730
+SignSymbol,0.8028,0.4140
+Fence,0.8051,0.6155
+Car,0.8851,0.7765
+Pedestrian,0.8387,0.4290
+Bicyclist,0.9424,0.6473
+mean,0.8533,0.6502
+global,0.8859,

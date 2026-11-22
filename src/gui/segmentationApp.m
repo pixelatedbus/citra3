@@ -1,6 +1,6 @@
 % main window with one tab per segmentation method
 function fig = segmentationApp(root)
-% root: char, project folder (holds data/ and results/)
+% root: char, project folder (holds data/, results/, models/ and .venv/)
 % fig: matlab.ui.Figure, the app window
 dataDir = fullfile(root, 'data', 'bsds500_test_8');
 saveDir = fullfile(root, 'results');
@@ -16,5 +16,5 @@ tabs = uitabgroup(grid);
 
 tabEdge(uitab(tabs, 'Title', 'B. Edge segmentation'), fig, dataDir, saveDir);
 tabSplitMerge(uitab(tabs, 'Title', 'C. Split and merge'), fig, dataDir, saveDir);
-tabSemantic(uitab(tabs, 'Title', 'D. Semantic segmentation'));
+tabSemantic(uitab(tabs, 'Title', 'D. Semantic segmentation'), fig, root, saveDir);
 end

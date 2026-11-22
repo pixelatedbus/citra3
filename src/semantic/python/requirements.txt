@@ -1,0 +1,6 @@
+# install torch with CUDA first:
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cu126
+torch==2.14.1
+torchvision==0.29.2
+numpy==2.4.6
+pillow==13.0.0
