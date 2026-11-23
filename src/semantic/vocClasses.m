@@ -1,4 +1,3 @@
-% names and display colours of the 21 Pascal VOC classes the downloaded model knew before fine-tuning
 function [names, colours] = vocClasses()
 % names: cell 1 x 21, class names (label value k = names{k}, 1 = background)
 % colours: double 21 x 3, rgb in [0,1], the usual VOC palette

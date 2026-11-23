@@ -1,11 +1,9 @@
-% marks pixels where the response changes sign sharply enough to count as an edge
 function [BW, T] = zeroCrossing(R, T)
 % R: double m x n, laplacian or log response
 % T: double scalar, or [] to pick it automatically
 % BW: logical m x n, true = edge (border pixels always false)
 % T (out): double scalar, threshold actually used
-% a pixel is an edge if its two neighbours (left/right or up/down) have
-% opposite signs and the jump between them is bigger than T
+% a pixel is an edge if its two neighbours (left/right or up/down) have opposite signs and the jump between them is bigger than T
 if isempty(T)
     T = 3 * mean(abs(R(:)));
 end

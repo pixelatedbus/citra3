@@ -1,4 +1,3 @@
-% finds edges where the laplacian flips sign
 function [BW, R, T] = laplaceEdge(I, T)
 % I: double m x n, gray image
 % T: double scalar, or [] to pick it automatically

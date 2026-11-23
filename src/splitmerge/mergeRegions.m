@@ -23,8 +23,6 @@ dist = sqrt(sum((colour(pairs(:, 1), :) - colour(pairs(:, 2), :)).^2, 2));
 [~, order] = sort(dist);
 pairs = pairs(order, :);
 
-% absorbing a small region changes its neighbour's mean colour, which can
-% make new merges possible, so repeat both steps until nothing is absorbed
 absorbed = true;
 while absorbed
     % a merge changes the region's mean colour, so keep going until nothing merges

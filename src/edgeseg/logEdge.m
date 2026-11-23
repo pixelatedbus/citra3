@@ -1,4 +1,3 @@
-% like laplaceEdge, but smooths with a gaussian first so noise gives fewer fake edges
 function [BW, R, T] = logEdge(I, T, sigma)
 % I: double m x n, gray image
 % T: double scalar, or [] to pick it automatically

@@ -1,4 +1,3 @@
-% sobel edge detector, like prewitt but the middle row/column counts double
 function [BW, mag, T] = sobelEdge(I, T)
 % I: double m x n, gray image
 % T: double scalar, or [] to pick it automatically

@@ -1,4 +1,3 @@
-% labels every pixel of the image with one of the 11 classes using the fine-tuned CNN (runs predict.py)
 function [L, Lbefore] = segmentSemantic(I, pythonExe, scriptPath)
 % I: double m x n x 3 (or m x n), values in [0,1], input image
 % pythonExe: char, python with torch installed (the project's .venv)

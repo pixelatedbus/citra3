@@ -1,4 +1,3 @@
-% cuts the main object out of the image using its edges and some morphology
 function [mask, BW] = segmentByEdges(I, method, opt)
 % I: double m x n x 3 (or m x n), values in [0,1], input image
 % method: char, operator name (see detectEdges)
@@ -14,7 +13,6 @@ function [mask, BW] = segmentByEdges(I, method, opt)
 % BW: logical m x n, true = edge
 % Steps from MathWorks' "Detect Cell Using Edge Detection and Morphology"
 g = toGray(I);
-% log and canny already smooth with their own sigma, blurring twice wipes out their edges
 if opt.smooth > 0 && ~strcmp(method, 'log') && ~strcmp(method, 'canny')
     g = convolve(g, gaussianKernel(opt.smooth));
 end
@@ -39,7 +37,6 @@ if ~strcmp(opt.keep, 'all') && any(mask(:))
 end
 end
 
-% keeps one blob: the biggest one, or the one that comes closest to the image centre
 function mask = pickBlob(mask, keep)
 % mask: logical m x n, blobs after the morphology
 % keep: char, 'largest' | 'centre'

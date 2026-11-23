@@ -1,4 +1,3 @@
-# the 11 classes we train on and which of the 32 CamVid classes go into each one
 import numpy as np
 
 CLASS_NAMES = ['Sky', 'Building', 'Pole', 'Road', 'Pavement', 'Tree',

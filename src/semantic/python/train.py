@@ -16,7 +16,7 @@ LOG_FILE = os.path.join(MODEL_DIR, 'train_log.csv')
 
 EPOCHS = 60
 BATCH = 8
-CROP = 320            # random square crop in pixels, the frames are 360 x 480
+CROP = 320
 LEARNING_RATE = 5e-4
 SEED = 0
 
@@ -45,7 +45,6 @@ def random_batch(images, labels, index, device):
     left = np.random.randint(0, cols - CROP + 1)
     x = images[index, top:top + CROP, left:left + CROP]
     y = labels[index, top:top + CROP, left:left + CROP]
-    # half of the batches are mirrored left-right
     if np.random.rand() < 0.5:
         x = x[:, :, ::-1]
         y = y[:, :, ::-1]

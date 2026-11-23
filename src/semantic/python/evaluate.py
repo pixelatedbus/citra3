@@ -1,4 +1,3 @@
-# scores the fine-tuned model on the test split and writes the numbers next to the model
 import os
 import numpy as np
 import torch

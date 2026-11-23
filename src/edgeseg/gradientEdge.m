@@ -1,4 +1,3 @@
-% finds edges by measuring how fast the brightness changes in x and y
 function [BW, mag, T] = gradientEdge(I, Kx, Ky, T)
 % I: double m x n, gray image
 % Kx, Ky: double 3 x 3, kernels for horizontal / vertical change

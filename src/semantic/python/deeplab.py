@@ -1,4 +1,3 @@
-# model and scoring helpers shared by train.py, evaluate.py and predict.py
 import os
 import numpy as np
 import torch
@@ -15,10 +14,7 @@ def build_model(num_classes, pretrained):
     # pretrained: bool, True starts from the COCO (21 VOC classes) weights
     # returns: torchvision DeepLabV3 with a new last layer of num_classes outputs
     weights = DeepLabV3_MobileNet_V3_Large_Weights.DEFAULT if pretrained else None
-    # weights_backbone=None: no separate imagenet download, the backbone comes with the weights above
-    # (or from our own .pt file when pretrained is False)
     model = deeplabv3_mobilenet_v3_large(weights=weights, weights_backbone=None)
-    # the last 1x1 conv gave 21 VOC scores per pixel; a fresh one gives our classes
     model.classifier[4] = torch.nn.Conv2d(256, num_classes, kernel_size=1)
     model.aux_classifier = None
     return model

@@ -1,4 +1,3 @@
-# turns the raw CamVid frames into 360x480 images + 11-class label maps, split 60/20/20 at random
 import os
 import random
 import numpy as np

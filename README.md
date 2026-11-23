@@ -78,5 +78,4 @@ src/semantic/          pemanggilan model dari MATLAB, kelas CamVid
 src/semantic/python/   persiapan data, pelatihan, evaluasi, dan prediksi (PyTorch)
 src/semantic/models/   model hasil fine-tuning, log pelatihan, metrik uji
 src/utils/             baca citra, konvolusi, kernel Gaussian
-scripts/runBatch.m     menjalankan bagian B dan C untuk semua citra uji sekaligus
 ```
