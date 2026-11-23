@@ -13,8 +13,9 @@ tab, masing-masing satu pendekatan segmentasi.
 
 | Nama | NIM |
 |---|---|
-| | |
-| | |
+| David Bakti Lodianto| 13523083 |
+| Lutfi Hakim Yusra | 13523084 |
+
 
 ## Kebutuhan
 
