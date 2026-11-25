@@ -1,3 +1,4 @@
+% laplacian of gaussian edge detection: log kernel, then zero crossings
 function [BW, R, T] = logEdge(I, T, sigma)
 % I: double m x n, gray image
 % T: double scalar, or [] to pick it automatically

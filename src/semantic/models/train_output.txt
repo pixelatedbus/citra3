@@ -1,0 +1,61 @@
+class weights: Sky=0.34 Building=0.22 Pole=5.57 Road=0.19 Pavement=0.78 Tree=0.46 SignSymbol=4.90 Fence=1.90 Car=1.00 Pedestrian=7.25 Bicyclist=5.43
+epoch   1  loss 1.108  val acc 0.732  val mIoU 0.408  35 s (saved)
+epoch   2  loss 0.723  val acc 0.790  val mIoU 0.515  16 s (saved)
+epoch   3  loss 0.617  val acc 0.788  val mIoU 0.512  16 s
+epoch   4  loss 0.557  val acc 0.823  val mIoU 0.546  17 s (saved)
+epoch   5  loss 0.532  val acc 0.829  val mIoU 0.566  16 s (saved)
+epoch   6  loss 0.483  val acc 0.833  val mIoU 0.565  16 s
+epoch   7  loss 0.454  val acc 0.850  val mIoU 0.577  13 s (saved)
+epoch   8  loss 0.434  val acc 0.857  val mIoU 0.588  20 s (saved)
+epoch   9  loss 0.416  val acc 0.867  val mIoU 0.601  19 s (saved)
+epoch  10  loss 0.413  val acc 0.867  val mIoU 0.589  18 s
+epoch  11  loss 0.402  val acc 0.878  val mIoU 0.607  11 s (saved)
+epoch  12  loss 0.380  val acc 0.857  val mIoU 0.590  11 s
+epoch  13  loss 0.378  val acc 0.866  val mIoU 0.594  14 s
+epoch  14  loss 0.373  val acc 0.873  val mIoU 0.613  15 s (saved)
+epoch  15  loss 0.363  val acc 0.863  val mIoU 0.595  15 s
+epoch  16  loss 0.354  val acc 0.864  val mIoU 0.607  19 s
+epoch  17  loss 0.343  val acc 0.872  val mIoU 0.616  19 s (saved)
+epoch  18  loss 0.340  val acc 0.875  val mIoU 0.631  20 s (saved)
+epoch  19  loss 0.327  val acc 0.870  val mIoU 0.611  19 s
+epoch  20  loss 0.324  val acc 0.867  val mIoU 0.609  20 s
+epoch  21  loss 0.328  val acc 0.879  val mIoU 0.626  20 s
+epoch  22  loss 0.319  val acc 0.880  val mIoU 0.630  19 s
+epoch  23  loss 0.312  val acc 0.879  val mIoU 0.627  19 s
+epoch  24  loss 0.309  val acc 0.863  val mIoU 0.608  19 s
+epoch  25  loss 0.307  val acc 0.880  val mIoU 0.627  20 s
+epoch  26  loss 0.294  val acc 0.878  val mIoU 0.628  19 s
+epoch  27  loss 0.291  val acc 0.881  val mIoU 0.632  19 s (saved)
+epoch  28  loss 0.290  val acc 0.882  val mIoU 0.631  19 s
+epoch  29  loss 0.291  val acc 0.878  val mIoU 0.626  19 s
+epoch  30  loss 0.288  val acc 0.874  val mIoU 0.620  19 s
+epoch  31  loss 0.282  val acc 0.878  val mIoU 0.627  19 s
+epoch  32  loss 0.282  val acc 0.886  val mIoU 0.640  19 s (saved)
+epoch  33  loss 0.275  val acc 0.885  val mIoU 0.637  19 s
+epoch  34  loss 0.272  val acc 0.881  val mIoU 0.634  19 s
+epoch  35  loss 0.273  val acc 0.883  val mIoU 0.637  19 s
+epoch  36  loss 0.268  val acc 0.883  val mIoU 0.638  19 s
+epoch  37  loss 0.263  val acc 0.884  val mIoU 0.638  20 s
+epoch  38  loss 0.267  val acc 0.885  val mIoU 0.638  21 s
+epoch  39  loss 0.265  val acc 0.883  val mIoU 0.637  19 s
+epoch  40  loss 0.263  val acc 0.883  val mIoU 0.638  21 s
+epoch  41  loss 0.257  val acc 0.887  val mIoU 0.645  20 s (saved)
+epoch  42  loss 0.260  val acc 0.888  val mIoU 0.646  19 s (saved)
+epoch  43  loss 0.256  val acc 0.883  val mIoU 0.642  19 s
+epoch  44  loss 0.256  val acc 0.886  val mIoU 0.643  20 s
+epoch  45  loss 0.254  val acc 0.886  val mIoU 0.640  19 s
+epoch  46  loss 0.253  val acc 0.888  val mIoU 0.646  17 s (saved)
+epoch  47  loss 0.253  val acc 0.887  val mIoU 0.643  17 s
+epoch  48  loss 0.251  val acc 0.886  val mIoU 0.642  17 s
+epoch  49  loss 0.251  val acc 0.887  val mIoU 0.642  20 s
+epoch  50  loss 0.248  val acc 0.888  val mIoU 0.644  18 s
+epoch  51  loss 0.250  val acc 0.887  val mIoU 0.644  18 s
+epoch  52  loss 0.250  val acc 0.887  val mIoU 0.644  18 s
+epoch  53  loss 0.248  val acc 0.887  val mIoU 0.645  13 s
+epoch  54  loss 0.247  val acc 0.887  val mIoU 0.645  10 s
+epoch  55  loss 0.247  val acc 0.888  val mIoU 0.645  10 s
+epoch  56  loss 0.243  val acc 0.888  val mIoU 0.645  10 s
+epoch  57  loss 0.245  val acc 0.888  val mIoU 0.646  10 s
+epoch  58  loss 0.245  val acc 0.888  val mIoU 0.645  10 s
+epoch  59  loss 0.243  val acc 0.888  val mIoU 0.645  9 s
+epoch  60  loss 0.248  val acc 0.888  val mIoU 0.645  9 s

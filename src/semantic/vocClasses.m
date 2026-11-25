@@ -1,3 +1,4 @@
+% the 21 VOC classes of the model before fine-tuning and their colours
 function [names, colours] = vocClasses()
 % names: cell 1 x 21, class names (label value k = names{k}, 1 = background)
 % colours: double 21 x 3, rgb in [0,1], the usual VOC palette

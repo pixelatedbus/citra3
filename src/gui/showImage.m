@@ -10,5 +10,5 @@ else
 end
 title(ax, titleText, 'Interpreter', 'none');
 axis(ax, 'off');
-ax.Toolbar.Visible = 'off';   % hides the zoom/pan buttons so screenshots stay clean
+ax.Toolbar.Visible = 'off';   % hides the zoom/pan buttons
 end

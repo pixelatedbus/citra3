@@ -1,3 +1,4 @@
+% sobel edge detection
 function [BW, mag, T] = sobelEdge(I, T)
 % I: double m x n, gray image
 % T: double scalar, or [] to pick it automatically

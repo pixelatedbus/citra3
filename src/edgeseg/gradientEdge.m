@@ -1,3 +1,4 @@
+% edge map from a pair of gradient kernels, shared by sobel, prewitt and roberts
 function [BW, mag, T] = gradientEdge(I, Kx, Ky, T)
 % I: double m x n, gray image
 % Kx, Ky: double 3 x 3, kernels for horizontal / vertical change

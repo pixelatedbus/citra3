@@ -1,3 +1,4 @@
+% cuts the main object out of an image using the edges found by one operator
 function [mask, BW] = segmentByEdges(I, method, opt)
 % I: double m x n x 3 (or m x n), values in [0,1], input image
 % method: char, operator name (see detectEdges)

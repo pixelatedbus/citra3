@@ -1,3 +1,4 @@
+% reads a ground truth label PNG made by prepare_camvid.py
 function L = loadLabels(path)
 % path: char, label PNG (class 0..10, 255 = void)
 % L: double m x n, class 1..11, 0 = void

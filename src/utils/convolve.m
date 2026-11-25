@@ -1,3 +1,4 @@
+% 2d convolution that keeps the image size, border pixels are repeated outward
 function J = convolve(I, K)
 % I: double m x n, gray image
 % K: double kh x kw (kh, kw odd), kernel

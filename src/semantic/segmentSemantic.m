@@ -1,3 +1,4 @@
+% labels every pixel of an image by running predict.py in python
 function [L, Lbefore] = segmentSemantic(I, pythonExe, scriptPath)
 % I: double m x n x 3 (or m x n), values in [0,1], input image
 % pythonExe: char, python with torch installed (the project's .venv)

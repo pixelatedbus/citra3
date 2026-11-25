@@ -1,3 +1,4 @@
+% the 11 grouped CamVid classes and the colour used to draw each one
 function [names, colours] = camvidClasses()
 % names: cell 1 x 11, class names (label value k = names{k})
 % colours: double 11 x 3, rgb in [0,1], one row per class

@@ -56,32 +56,22 @@ showInput();
 
     % training curve and the per-class test scores written by train.py and evaluate.py
     function [miou, accuracy] = showModelInfo()
-        miou = NaN;
-        accuracy = NaN;
-        logFile = fullfile(modelDir, 'train_log.csv');
-        if exist(logFile, 'file')
-            log = readmatrix(logFile);   % epoch, train loss, val accuracy, val mIoU, seconds
-            yyaxis(curveAxes, 'left');
-            plot(curveAxes, log(:, 1), log(:, 2));
-            ylabel(curveAxes, 'train loss');
-            yyaxis(curveAxes, 'right');
-            plot(curveAxes, log(:, 1), log(:, 4));
-            ylabel(curveAxes, 'val mIoU');
-            xlabel(curveAxes, 'epoch');
-            title(curveAxes, 'fine-tuning on CamVid');
-            curveAxes.Toolbar.Visible = 'off';
-        end
+        history = readmatrix(fullfile(modelDir, 'train_log.csv'));   % epoch, train loss, val accuracy, val mIoU, seconds
+        yyaxis(curveAxes, 'left');
+        plot(curveAxes, history(:, 1), history(:, 2));
+        ylabel(curveAxes, 'train loss');
+        yyaxis(curveAxes, 'right');
+        plot(curveAxes, history(:, 1), history(:, 4));
+        ylabel(curveAxes, 'val mIoU');
+        xlabel(curveAxes, 'epoch');
+        title(curveAxes, 'fine-tuning on CamVid');
+        curveAxes.Toolbar.Visible = 'off';
 
-        metricFile = fullfile(modelDir, 'test_metrics.csv');
-        iou = nan(11, 1);
-        classAccuracy = nan(11, 1);
-        if exist(metricFile, 'file')
-            m = readmatrix(metricFile);   % rows: 11 classes, mean, global; columns: name, accuracy, iou
-            classAccuracy = m(1:11, 2);
-            iou = m(1:11, 3);
-            miou = m(12, 3);
-            accuracy = m(13, 2);
-        end
+        m = readmatrix(fullfile(modelDir, 'test_metrics.csv'));   % rows: 11 classes, mean, global; columns: name, accuracy, iou
+        classAccuracy = m(1:11, 2);
+        iou = m(1:11, 3);
+        miou = m(12, 3);
+        accuracy = m(13, 2);
         classTable.Data = table(names', compose('%.1f', 100 * iou), compose('%.1f', 100 * classAccuracy));
         classTable.ColumnName = {'Class', 'Test IoU (%)', 'Test accuracy (%)'};
         classTable.RowName = {};
@@ -152,7 +142,7 @@ showInput();
         for k = 1:numel(vocNames)
             share = mean(Lbefore(:) == k);
             if share >= 0.01
-                found{end + 1} = sprintf('%s %.0f%%', vocNames{k}, 100 * share); %#ok<AGROW>
+                found{end + 1} = sprintf('%s %.0f%%', vocNames{k}, 100 * share);
             end
         end
         showImage(beforeAxes, label2rgb(Lbefore, vocColours), ...

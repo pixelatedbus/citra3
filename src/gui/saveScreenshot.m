@@ -1,4 +1,4 @@
-% saves a picture of the whole window, parameters included, for the report
+% saves a picture of the whole window, parameters included
 function saveScreenshot(fig, imagePath, part, saveDir)
 % fig: matlab.ui.Figure, the app window
 % imagePath: char, image shown in the tab, used for the file name

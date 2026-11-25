@@ -1,3 +1,4 @@
+% laplace edge detection: 3x3 laplacian kernel, then zero crossings
 function [BW, R, T] = laplaceEdge(I, T)
 % I: double m x n, gray image
 % T: double scalar, or [] to pick it automatically

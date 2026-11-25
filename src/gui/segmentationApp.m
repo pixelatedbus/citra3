@@ -10,7 +10,7 @@ end
 
 fig = uifigure('Name', 'IF4073 Tugas 3 - Segmentasi Citra', 'Position', [20 40 1600 860]);
 fig.WindowState = 'maximized';
-fig.Theme = 'light';   % same look on every machine, matches the report screenshots
+fig.Theme = 'light';   % same look on every machine
 grid = uigridlayout(fig, [1 1]);
 grid.Padding = [0 0 0 0];
 tabs = uitabgroup(grid);

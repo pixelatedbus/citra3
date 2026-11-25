@@ -1,3 +1,4 @@
+% runs one of the six edge operators on an image
 function [BW, R, T] = detectEdges(I, method, T, sigma)
 % I: double m x n x 3 (or m x n), values in [0,1], input image
 % method: char, 'sobel' | 'prewitt' | 'roberts' | 'laplace' | 'log' | 'canny'

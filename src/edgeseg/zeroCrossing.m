@@ -1,3 +1,4 @@
+% marks the pixels where the laplacian response changes sign by a big enough jump
 function [BW, T] = zeroCrossing(R, T)
 % R: double m x n, laplacian or log response
 % T: double scalar, or [] to pick it automatically
